@@ -1,0 +1,591 @@
+{
+  "log": {
+    "disabled": false,
+    "level": "fatal",
+    "output": "",
+    "timestamp": false
+  },
+  "experimental": {
+    "clash_api": {
+      "external_controller": "127.0.0.1:20123",
+      "external_ui": "",
+      "external_ui_download_url": "",
+      "secret": "87436b2acaa06f04b50f0081c05ce081987f3b7ad468bf53d197a188b38b37d7",
+      "default_mode": "rule",
+      "access_control_allow_origin": [
+        "*"
+      ],
+      "access_control_allow_private_network": false
+    },
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db",
+      "cache_id": "",
+      "store_fakeip": true,
+      "store_rdrc": true,
+      "rdrc_timeout": "7d"
+    }
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 20122,
+      "tcp_fast_open": false,
+      "tcp_multi_path": false,
+      "udp_fragment": false
+    },
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "interface_name": "",
+      "address": [
+        "172.18.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "mtu": 9000,
+      "auto_route": true,
+      "strict_route": true,
+      "endpoint_independent_nat": false,
+      "stack": "mixed"
+    }
+  ],
+        "outbounds": [
+    {
+      "outbounds": [
+        "نیکا شاکرمی مهسا امینی",
+        "صدرالدین لیتانی",
+                "مهرگان زحمتکش",
+                "مهرزاد بهروز",
+                "محمد عبداللهی",
+                "دانش رهنما",
+                "رامین کرمی",
+                "سینا ملایری",
+                "ساسان قربانی",    
+"رضا رسایی",
+"‌محبت مظفری",
+"نرگس خرمی فرد",
+"امیرجواد اسعد زاده",
+"علی مظفری",
+"آتوسا استادی",
+"مریم غواصی"
+      ],
+      "tag": "منصوره سگوند مهسا موگویی",
+      "type": "selector"
+    },
+    {
+      "interval": "10m",
+      "outbounds": [
+        "صدرالدین لیتانی",
+                "مهرگان زحمتکش",
+                "مهرزاد بهروز",
+                "محمد عبداللهی",
+                "دانش رهنما",
+                "رامین کرمی",
+                "سینا ملایری",
+                "ساسان قربانی",    
+"رضا رسایی",
+"‌محبت مظفری",
+"نرگس خرمی فرد",
+"امیرجواد اسعد زاده",
+"علی مظفری",
+"آتوسا استادی",
+"مریم غواصی"
+      
+      
+      ],
+      "tag": "نیکا شاکرمی مهسا امینی",
+      "tolerance": 50,
+      "type": "urltest",
+      "url": "http://www.gstatic.com/generate_204"
+    },
+   
+  {
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+            "path": "",
+            "server": "152.89.162.162",
+            "server_port": 443,
+            "domain_strategy": "",
+            "tag": "صدرالدین لیتانی",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "google.com"
+            },
+            "type": "http",
+            "username": "Telegram_iranramona"
+        },
+  {
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+            "path": "",
+            "server": "152.89.162.165",
+            "server_port": 443,
+            "domain_strategy": "",
+            "tag": "مهرگان زحمتکش",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "google.com"
+            },
+            "type": "http",
+            "username": "Telegram_iranramona"
+        },
+  
+  {
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+            "path": "",
+            "server": "146.70.135.21",
+            "server_port": 443,
+            "domain_strategy": "",
+            "tag": "مهرزاد بهروز",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "google.com"
+            },
+            "type": "http",
+            "username": "Telegram_iranramona"
+        },
+  
+  {
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+            "path": "",
+            "server": "146.70.169.226",
+            "server_port": 443,
+            "domain_strategy": "",
+            "tag": "محمد عبداللهی",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "google.com"
+            },
+            "type": "http",
+            "username": "Telegram_iranramona"
+        },
+  {
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+            "path": "",
+            "server": "146.70.169.229",
+            "server_port": 443,
+            "domain_strategy": "",
+            "tag": "دانش رهنما",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "google.com"
+            },
+            "type": "http",
+            "username": "Telegram_iranramona"
+        },
+ 
+  {
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+            "path": "",
+            "server": "37.120.145.60",
+            "server_port": 443,
+            "domain_strategy": "",
+            "tag": "رامین کرمی",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "google.com"
+            },
+            "type": "http",
+            "username": "Telegram_iranramona"
+        },
+  {
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+            "path": "",
+            "server": "45.12.221.187",
+            "server_port": 443,
+            "domain_strategy": "",
+            "tag": "سینا ملایری",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "google.com"
+            },
+            "type": "http",
+            "username": "Telegram_iranramona"
+        },
+  {
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+            "path": "",
+            "server": "45.12.221.187",
+            "server_port": 443,
+            "domain_strategy": "",
+            "tag": "ساسان قربانی",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "google.com"
+            },
+            "type": "http",
+            "username": "Telegram_iranramona"
+        },
+ 
+{
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+            "path": "",
+            "server": "217.138.202.236",
+            "server_port": 443,
+            "domain_strategy": "",
+            "tag": "رضا رسایی",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "google.com"
+            },
+            "type": "http",
+            "username": "Telegram_iranramona"
+        },
+ 
+{
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+            "path": "",
+            "server": "146.70.182.179",
+            "server_port": 443,
+            "domain_strategy": "",
+            "tag": "‌محبت مظفری",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "google.com"
+            },
+            "type": "http",
+            "username": "Telegram_iranramona"
+        },
+
+  {
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+            "path": "",
+            "server": "217.138.202.234",
+            "server_port": 443,
+            "domain_strategy": "",
+            "tag": "نرگس خرمی فرد",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "google.com"
+            },
+            "type": "http",
+            "username": "Telegram_iranramona"
+        },
+
+  {
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+            "path": "",
+            "server": "185.125.169.171",
+            "server_port": 443,
+            "domain_strategy": "",
+            "tag": "امیرجواد اسعد زاده",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "google.com"
+            },
+            "type": "http",
+            "username": "Telegram_iranramona"
+        },
+{
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+            "path": "",
+            "server": "146.70.192.205",
+            "server_port": 443,
+            "domain_strategy": "",
+            "tag": "علی مظفری",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "google.com"
+            },
+            "type": "http",
+            "username": "Telegram_iranramona"
+        },
+  
+{
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+            "path": "",
+            "server": "146.70.192.202",
+            "server_port": 443,
+            "domain_strategy": "",
+            "tag": "آتوسا استادی",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "google.com"
+            },
+            "type": "http",
+            "username": "Telegram_iranramona"
+        },
+ 
+  {
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+            "path": "",
+            "server": "146.70.192.204",
+            "server_port": 443,
+            "domain_strategy": "",
+            "tag": "مریم غواصی",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "google.com"
+            },
+            "type": "http",
+            "username": "Telegram_iranramona"
+        }
+
+  ],
+  "route": {
+    "rules": [
+      {
+        "action": "sniff",
+        "inbound": "tun-in"
+      },
+      {
+        "action": "hijack-dns",
+        "protocol": "dns"
+      },
+      {
+        "action": "reject",
+        "protocol": "quic"
+      },
+      {
+        "action": "reject",
+        "rule_set": [
+          "Category-Ads"
+        ]
+      }
+    ],
+    "rule_set": [
+      {
+        "tag": "Category-Ads",
+        "type": "remote",
+        "url": "https://github.com/wearestand14-01/sing-box-Rule/raw/refs/heads/main/Category-Ads.srs",
+        "format": "binary"
+      },
+      {
+        "tag": "GeoIP-Private",
+        "type": "remote",
+        "url": "https://github.com/wearestand14-01/sing-box-Rule/raw/refs/heads/main/GeoIP-Private.srs",
+        "format": "binary"
+      },
+      {
+        "tag": "GeoSite-Private",
+        "type": "remote",
+        "url": "https://github.com/wearestand14-01/sing-box-Rule/raw/refs/heads/main/GeoSite-Private.srs",
+        "format": "binary"
+      },
+      {
+        "tag": "GeoIP-IR",
+        "type": "remote",
+        "url": "https://github.com/wearestand14-01/sing-box-Rule/raw/refs/heads/main/GeoIP-IR.srs",
+        "format": "binary"
+      },
+      {
+        "tag": "GeoSite-IR",
+        "type": "remote",
+        "url": "https://github.com/wearestand14-01/sing-box-Rule/raw/refs/heads/main/GeoSite-IR.srs",
+        "format": "binary"
+      }
+    ],
+    "auto_detect_interface": true,
+    "final": "نیکا شاکرمی مهسا امینی",
+    "default_domain_resolver": {
+      "server": "Local-DNS"
+    }
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "Local-DNS",
+        "type": "https",
+        "domain_resolver": "Local-DNS-Resolver",
+        "server_port": 443,
+        "server": "94.140.14.140",
+        "path": "/dns-query"
+      },
+      {
+        "tag": "Local-DNS-Resolver",
+        "type": "udp",
+        "server_port": 53,
+        "server": "94.140.14.140"
+      },
+      {
+        "tag": "Remote-DNS",
+        "type": "tls",
+        "detour": "منصوره سگوند مهسا موگویی",
+        "domain_resolver": "Remote-DNS-Resolver",
+        "server_port": 853,
+        "server": "8.8.8.8"
+      },
+      {
+        "tag": "Remote-DNS-Resolver",
+        "type": "udp",
+        "detour": "منصوره سگوند مهسا موگویی",
+        "server_port": 53,
+        "server": "8.8.8.8"
+      }
+    ],
+    "rules": [
+      {
+        "action": "route",
+        "clash_mode": "direct",
+        "server": "Local-DNS"
+      },
+      {
+        "action": "route",
+        "clash_mode": "global",
+        "server": "Remote-DNS"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "GeoSite-IR"
+        ],
+        "server": "Local-DNS"
+      }
+    ],
+    "disable_cache": false,
+    "disable_expire": false,
+    "independent_cache": false,
+    "final": "Remote-DNS"
+  }
+
+}

@@ -1,0 +1,1379 @@
+{
+  "log": {
+    "disabled": false,
+    "level": "fatal",
+    "output": "",
+    "timestamp": false
+  },
+  "experimental": {
+    "clash_api": {
+      "external_controller": "127.0.0.1:20123",
+      "external_ui": "",
+      "external_ui_download_url": "",
+      "secret": "87436b2acaa06f04b50f0081c05ce081987f3b7ad468bf53d197a188b38b37d7",
+      "default_mode": "rule",
+      "access_control_allow_origin": [
+        "*"
+      ],
+      "access_control_allow_private_network": false
+    },
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db",
+      "cache_id": "",
+      "store_fakeip": true,
+      "store_rdrc": true,
+      "rdrc_timeout": "7d"
+    }
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 20122,
+      "tcp_fast_open": false,
+      "tcp_multi_path": false,
+      "udp_fragment": false
+    },
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "interface_name": "",
+      "address": [
+        "172.18.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "mtu": 9000,
+      "auto_route": true,
+      "strict_route": true,
+      "endpoint_independent_nat": false,
+      "stack": "mixed"
+    }
+  ],
+        "outbounds": [
+    {
+      "outbounds": [
+        "نیکا شاکرمی مهسا امینی",
+       "wearestand-Sweden",
+        "wearestand-Germany",
+        "wearestand-Swiss",
+        "wearestand-Slovakia",
+        "wearestand-Netherlands",
+        "wearestand-iranramona",
+        "wearestand-Belgium",
+        "wearestand-Italy",
+        "wearestand-UK-Man",
+        "wearestand-Romania",
+        "wearestand-Moldova",
+        "wearestand-Canada",
+        "wearestand-Norway",
+        "wearestand-Miami",
+        "wearestand-LosAngeles",
+        "wearestand-UAE",
+        "wearestand-Singapore",
+        "wearestand-Phoenix",
+        "wearestand-Austria",
+        "wearestand-HongKong",
+        "wearestand-Turkey",
+        "wearestand-Sweden 2",
+        "wearestand-Germany 2",
+        "wearestand-Swiss 2",
+        "wearestand-Slovakia 2",
+        "wearestand-Netherlands 2",
+        "wearestand-Russia 2",
+        "wearestand-Bulgaria 2",
+        "wearestand-Italy 2",
+        "wearestand-UK-Man 2",
+        "wearestand-Romania 2",
+        "wearestand-Moldova 2",
+        "wearestand-Canada 2",
+        "wearestand-Norway 2",
+        "wearestand-Miami 2",
+        "wearestand-LosAngeles 2",
+        "wearestand-UAE 2",
+        "wearestand-Singapore 2",
+        "wearestand-Phoenix 2",
+        "wearestand-Austria 2",
+        "wearestand-HongKong 2",
+        "wearestand-Kenya 2",
+        "wearestand-Moldova 2",
+        "wearestand-Ukraine 2",
+        "wearestand-Belgium 2",
+        "wearestand-Turkey 2"
+
+      ],
+      "tag": "منصوره سگوند مهسا موگویی",
+      "type": "selector"
+    },
+    {
+      "interval": "10m",
+      "outbounds": [
+       
+      "wearestand-Sweden",
+        "wearestand-Germany",
+        "wearestand-Swiss",
+        "wearestand-Slovakia",
+        "wearestand-Netherlands",
+        "wearestand-iranramona",
+        "wearestand-Belgium",
+        "wearestand-Italy",
+        "wearestand-UK-Man",
+        "wearestand-Romania",
+        "wearestand-Moldova",
+        "wearestand-Canada",
+        "wearestand-Norway",
+        "wearestand-Miami",
+        "wearestand-LosAngeles",
+        "wearestand-UAE",
+        "wearestand-Singapore",
+        "wearestand-Phoenix",
+        "wearestand-Austria",
+        "wearestand-HongKong",
+        "wearestand-Turkey",
+        "wearestand-Sweden 2",
+        "wearestand-Germany 2",
+        "wearestand-Swiss 2",
+        "wearestand-Slovakia 2",
+        "wearestand-Netherlands 2",
+        "wearestand-Russia 2",
+        "wearestand-Bulgaria 2",
+        "wearestand-Italy 2",
+        "wearestand-UK-Man 2",
+        "wearestand-Romania 2",
+        "wearestand-Moldova 2",
+        "wearestand-Canada 2",
+        "wearestand-Norway 2",
+        "wearestand-Miami 2",
+        "wearestand-LosAngeles 2",
+        "wearestand-UAE 2",
+        "wearestand-Singapore 2",
+        "wearestand-Phoenix 2",
+        "wearestand-Austria 2",
+        "wearestand-HongKong 2",
+        "wearestand-Kenya 2",
+        "wearestand-Moldova 2",
+        "wearestand-Ukraine 2",
+        "wearestand-Belgium 2",
+        "wearestand-Turkey 2"
+      
+      
+      ],
+      "tag": "نیکا شاکرمی مهسا امینی",
+      "tolerance": 50,
+      "type": "urltest",
+      "url": "http://www.gstatic.com/generate_204"
+    },
+          
+
+    {
+      "tag": "wearestand-Sweden",
+      "type": "vless",
+      "server": "damp-cherry-4620.vpnetwork3567.workers.dev",
+      "server_port": 443,
+      "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "damp-cherry-4620.vpnetwork3567.workers.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "damp-cherry-4620.vpnetwork3567.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "wearestand-Germany",
+      "type": "vless",
+      "server": "wild-resonance-23be.vpnetwork3567.workers.dev",
+      "server_port": 443,
+      "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "wild-resonance-23be.vpnetwork3567.workers.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "wild-resonance-23be.vpnetwork3567.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "wearestand-Swiss",
+      "type": "vless",
+      "server": "square-shape-a8b4.vpnetwork3567.workers.dev",
+      "server_port": 443,
+      "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "square-shape-a8b4.vpnetwork3567.workers.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "square-shape-a8b4.vpnetwork3567.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "wearestand-Slovakia",
+      "type": "vless",
+      "server": "soft-water-83f3.vpnetwork3567.workers.dev",
+      "server_port": 443,
+      "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "soft-water-83f3.vpnetwork3567.workers.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "soft-water-83f3.vpnetwork3567.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "wearestand-Netherlands",
+      "type": "vless",
+      "server": "shiny-unit-654d.vpnetwork3567.workers.dev",
+      "server_port": 443,
+      "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "shiny-unit-654d.vpnetwork3567.workers.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shiny-unit-654d.vpnetwork3567.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "wearestand-iranramona",
+      "type": "vless",
+      "server": "shiny-unit-654d.vpnetwork3567.workers.dev",
+      "server_port": 443,
+      "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "shiny-unit-654d.vpnetwork3567.workers.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shiny-unit-654d.vpnetwork3567.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "wearestand-Belgium",
+      "type": "trojan",
+      "server": "muddy-frost-4e2d.vpnetwork3567.workers.dev",
+      "server_port": 443,
+      "password": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "tls": {
+        "enabled": true,
+        "server_name": "muddy-frost-4e2d.vpnetwork3567.workers.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "muddy-frost-4e2d.vpnetwork3567.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "wearestand-Italy",
+      "type": "vless",
+      "server": "lingering-boat-0b47.vpnetwork3567.workers.dev",
+      "server_port": 443,
+      "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "lingering-boat-0b47.vpnetwork3567.workers.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "lingering-boat-0b47.vpnetwork3567.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "wearestand-UK-Man",
+      "type": "vless",
+      "server": "snowy-cloud-192b.vpnetwork3567.workers.dev",
+      "server_port": 443,
+      "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "snowy-cloud-192b.vpnetwork3567.workers.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "snowy-cloud-192b.vpnetwork3567.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "wearestand-Romania",
+      "type": "vless",
+      "server": "snowy-mountain-d4be.vpnetwork3567.workers.dev",
+      "server_port": 443,
+      "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "snowy-mountain-d4be.vpnetwork3567.workers.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "snowy-mountain-d4be.vpnetwork3567.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "wearestand-Moldova",
+      "type": "trojan",
+      "server": "dry-snowflake-b29f.vpnetwork3567.workers.dev",
+      "server_port": 443,
+      "password": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "tls": {
+        "enabled": true,
+        "server_name": "dry-snowflake-b29f.vpnetwork3567.workers.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "dry-snowflake-b29f.vpnetwork3567.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "wearestand-Canada",
+      "type": "vless",
+      "server": "misty-star-5588.vpnetwork3567.workers.dev",
+      "server_port": 443,
+      "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "misty-star-5588.vpnetwork3567.workers.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "misty-star-5588.vpnetwork3567.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "wearestand-Norway",
+      "type": "vless",
+      "server": "damp-morning-6562.vpnetwork3567.workers.dev",
+      "server_port": 443,
+      "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "damp-morning-6562.vpnetwork3567.workers.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "damp-morning-6562.vpnetwork3567.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "wearestand-Miami",
+      "type": "vless",
+      "server": "broken-scene-ce1a.vpnetwork3567.workers.dev",
+      "server_port": 443,
+      "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "broken-scene-ce1a.vpnetwork3567.workers.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "broken-scene-ce1a.vpnetwork3567.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "wearestand-LosAngeles",
+      "type": "vless",
+      "server": "solitary-forest-ad02.vpnetwork3567.workers.dev",
+      "server_port": 443,
+      "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "solitary-forest-ad02.vpnetwork3567.workers.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "solitary-forest-ad02.vpnetwork3567.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "wearestand-UAE",
+      "type": "vless",
+      "server": "little-fog-1c2f.vpnetwork3567.workers.dev",
+      "server_port": 443,
+      "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "little-fog-1c2f.vpnetwork3567.workers.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "little-fog-1c2f.vpnetwork3567.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "wearestand-Singapore",
+      "type": "trojan",
+      "server": "lingering-fire-1fe9.vpnetwork3567.workers.dev",
+      "server_port": 443,
+      "password": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "tls": {
+        "enabled": true,
+        "server_name": "lingering-fire-1fe9.vpnetwork3567.workers.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "lingering-fire-1fe9.vpnetwork3567.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "wearestand-Phoenix",
+      "type": "vless",
+      "server": "falling-mud-d0e2.vpnetwork3567.workers.dev",
+      "server_port": 443,
+      "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "falling-mud-d0e2.vpnetwork3567.workers.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "falling-mud-d0e2.vpnetwork3567.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "wearestand-Austria",
+      "type": "vless",
+      "server": "ancient-haze-d203.vpnetwork3567.workers.dev",
+      "server_port": 443,
+      "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ancient-haze-d203.vpnetwork3567.workers.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "ancient-haze-d203.vpnetwork3567.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "wearestand-HongKong",
+      "type": "vless",
+      "server": "quiet-wind-f608.vpnetwork3567.workers.dev",
+      "server_port": 443,
+      "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "quiet-wind-f608.vpnetwork3567.workers.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "quiet-wind-f608.vpnetwork3567.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "wearestand-Turkey",
+      "type": "vless",
+      "server": "still-bar-5702.vpnetwork3567.workers.dev",
+      "server_port": 443,
+      "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "still-bar-5702.vpnetwork3567.workers.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "still-bar-5702.vpnetwork3567.workers.dev"
+        }
+      }
+    },
+  {
+   "type": "vless",
+   "tag": "wearestand-Bulgaria 2",
+   "server": "bul.foldandflyhigh.com",
+   "server_port": 443,
+   "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+   "tls": {
+    "enabled": true,
+    "server_name": "bul.foldandflyhigh.com",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "chrome"
+    }
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "bul.foldandflyhigh.com"
+    },
+    "early_data_header_name": "Sec-WebSocket-Protocol"
+   },
+   "packet_encoding": "xudp"
+  },
+  {
+   "type": "vless",
+   "tag": "wearestand-Canada 2",
+   "server": "ca.foldandflyhigh.com",
+   "server_port": 443,
+   "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+   "tls": {
+    "enabled": true,
+    "server_name": "ca.foldandflyhigh.com",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "chrome"
+    }
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "ca.foldandflyhigh.com"
+    },
+    "early_data_header_name": "Sec-WebSocket-Protocol"
+   },
+   "packet_encoding": "xudp"
+  },
+  {
+   "type": "vless",
+   "tag": "wearestand-Germany 2",
+   "server": "ger.foldandflyhigh.com",
+   "server_port": 443,
+   "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+   "tls": {
+    "enabled": true,
+    "server_name": "ger.foldandflyhigh.com",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "chrome"
+    }
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "ger.foldandflyhigh.com"
+    },
+    "early_data_header_name": "Sec-WebSocket-Protocol"
+   },
+   "packet_encoding": "xudp"
+  },
+  {
+   "type": "vless",
+   "tag": "wearestand-Netherlands 2",
+   "server": "nl.foldandflyhigh.com",
+   "server_port": 443,
+   "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+   "tls": {
+    "enabled": true,
+    "server_name": "nl.foldandflyhigh.com",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "chrome"
+    }
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "nl.foldandflyhigh.com"
+    },
+    "early_data_header_name": "Sec-WebSocket-Protocol"
+   },
+   "packet_encoding": "xudp"
+  },
+  {
+   "type": "vless",
+   "tag": "wearestand-Norway 2",
+   "server": "no.foldandflyhigh.com",
+   "server_port": 443,
+   "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+   "tls": {
+    "enabled": true,
+    "server_name": "no.foldandflyhigh.com",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "chrome"
+    }
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "no.foldandflyhigh.com"
+    },
+    "early_data_header_name": "Sec-WebSocket-Protocol"
+   },
+   "packet_encoding": "xudp"
+  },
+  {
+   "type": "vless",
+   "tag": "wearestand-Romania 2",
+   "server": "ro.foldandflyhigh.com",
+   "server_port": 443,
+   "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+   "tls": {
+    "enabled": true,
+    "server_name": "ro.foldandflyhigh.com",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "chrome"
+    }
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "ro.foldandflyhigh.com"
+    },
+    "early_data_header_name": "Sec-WebSocket-Protocol"
+   },
+   "packet_encoding": "xudp"
+  },
+  {
+   "type": "vless",
+   "tag": "wearestand-LosAngeles 2",
+   "server": "usla.foldandflyhigh.com",
+   "server_port": 443,
+   "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+   "tls": {
+    "enabled": true,
+    "server_name": "usla.foldandflyhigh.com",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "chrome"
+    }
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "usla.foldandflyhigh.com"
+    },
+    "early_data_header_name": "Sec-WebSocket-Protocol"
+   },
+   "packet_encoding": "xudp"
+  },
+  {
+   "type": "vless",
+   "tag": "wearestand-UAE 2",
+   "server": "uae.foldandflyhigh.com",
+   "server_port": 443,
+   "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+   "tls": {
+    "enabled": true,
+    "server_name": "uae.foldandflyhigh.com",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "chrome"
+    }
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "uae.foldandflyhigh.com"
+    },
+    "early_data_header_name": "Sec-WebSocket-Protocol"
+   },
+   "packet_encoding": "xudp"
+  },
+  {
+   "type": "vless",
+   "tag": "wearestand-Russia 2",
+   "server": "ru.foldandflyhigh.com",
+   "server_port": 443,
+   "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+   "tls": {
+    "enabled": true,
+    "server_name": "ru.foldandflyhigh.com",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "chrome"
+    }
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "ru.foldandflyhigh.com"
+    },
+    "early_data_header_name": "Sec-WebSocket-Protocol"
+   },
+   "packet_encoding": "xudp"
+  },
+  {
+   "type": "vless",
+   "tag": "wearestand-Miami 2",
+   "server": "usfl.foldandflyhigh.com",
+   "server_port": 443,
+   "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+   "tls": {
+    "enabled": true,
+    "server_name": "usfl.foldandflyhigh.com",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "chrome"
+    }
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "usfl.foldandflyhigh.com"
+    },
+    "early_data_header_name": "Sec-WebSocket-Protocol"
+   },
+   "packet_encoding": "xudp"
+  },
+  {
+   "type": "vless",
+   "tag": "wearestand-HongKong 2",
+   "server": "hk.foldandflyhigh.com",
+   "server_port": 443,
+   "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+   "tls": {
+    "enabled": true,
+    "server_name": "hk.foldandflyhigh.com",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "chrome"
+    }
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "hk.foldandflyhigh.com"
+    },
+    "early_data_header_name": "Sec-WebSocket-Protocol"
+   },
+   "packet_encoding": "xudp"
+  },
+  {
+   "type": "vless",
+   "tag": "wearestand-Phoenix 2",
+   "server": "usphx.foldandflyhigh.com",
+   "server_port": 443,
+   "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+   "tls": {
+    "enabled": true,
+    "server_name": "usphx.foldandflyhigh.com",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "chrome"
+    }
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "usphx.foldandflyhigh.com"
+    },
+    "early_data_header_name": "Sec-WebSocket-Protocol"
+   },
+   "packet_encoding": "xudp"
+  },
+  {
+   "type": "vless",
+   "tag": "wearestand-Sweden 2",
+   "server": "swe.foldandflyhigh.com",
+   "server_port": 443,
+   "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+   "tls": {
+    "enabled": true,
+    "server_name": "swe.foldandflyhigh.com",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "chrome"
+    }
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "swe.foldandflyhigh.com"
+    },
+    "early_data_header_name": "Sec-WebSocket-Protocol"
+   },
+   "packet_encoding": "xudp"
+  },
+  {
+   "type": "vless",
+   "tag": "wearestand-Slovakia 2",
+   "server": "sk.foldandflyhigh.com",
+   "server_port": 443,
+   "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+   "tls": {
+    "enabled": true,
+    "server_name": "sk.foldandflyhigh.com",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "chrome"
+    }
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "sk.foldandflyhigh.com"
+    },
+    "early_data_header_name": "Sec-WebSocket-Protocol"
+   },
+   "packet_encoding": "xudp"
+  },
+  {
+   "type": "vless",
+   "tag": "wearestand-UK-Man 2",
+   "server": "ukman.foldandflyhigh.com",
+   "server_port": 443,
+   "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+   "tls": {
+    "enabled": true,
+    "server_name": "ukman.foldandflyhigh.com",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "chrome"
+    }
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "ukman.foldandflyhigh.com"
+    },
+    "early_data_header_name": "Sec-WebSocket-Protocol"
+   },
+   "packet_encoding": "xudp"
+  },
+  {
+   "type": "vless",
+   "tag": "wearestand-Italy 2",
+   "server": "it.foldandflyhigh.com",
+   "server_port": 443,
+   "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+   "tls": {
+    "enabled": true,
+    "server_name": "it.foldandflyhigh.com",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "chrome"
+    }
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "it.foldandflyhigh.com"
+    },
+    "early_data_header_name": "Sec-WebSocket-Protocol"
+   },
+   "packet_encoding": "xudp"
+  },
+  {
+   "type": "vless",
+   "tag": "wearestand-Kenya 2",
+   "server": "ken.foldandflyhigh.com",
+   "server_port": 443,
+   "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+   "tls": {
+    "enabled": true,
+    "server_name": "ken.foldandflyhigh.com",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "chrome"
+    }
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "ken.foldandflyhigh.com"
+    },
+    "early_data_header_name": "Sec-WebSocket-Protocol"
+   },
+   "packet_encoding": "xudp"
+  },
+  {
+   "type": "vless",
+   "tag": "wearestand-Swiss 2",
+   "server": "swiss.foldandflyhigh.com",
+   "server_port": 443,
+   "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+   "tls": {
+    "enabled": true,
+    "server_name": "swiss.foldandflyhigh.com",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "chrome"
+    }
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "swiss.foldandflyhigh.com"
+    },
+    "early_data_header_name": "Sec-WebSocket-Protocol"
+   },
+   "packet_encoding": "xudp"
+  },
+  {
+   "type": "vless",
+   "tag": "wearestand-Austria 2",
+   "server": "aus.foldandflyhigh.com",
+   "server_port": 443,
+   "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+   "tls": {
+    "enabled": true,
+    "server_name": "aus.foldandflyhigh.com",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "chrome"
+    }
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "aus.foldandflyhigh.com"
+    },
+    "early_data_header_name": "Sec-WebSocket-Protocol"
+   },
+   "packet_encoding": "xudp"
+  },
+  {
+   "type": "vless",
+   "tag": "wearestand-Turkey 2",
+   "server": "tk.foldandflyhigh.com",
+   "server_port": 443,
+   "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+   "tls": {
+    "enabled": true,
+    "server_name": "tk.foldandflyhigh.com",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "chrome"
+    }
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "tk.foldandflyhigh.com"
+    },
+    "early_data_header_name": "Sec-WebSocket-Protocol"
+   },
+   "packet_encoding": "xudp"
+  },
+  {
+   "type": "trojan",
+   "tag": "wearestand-Ukraine 2",
+   "server": "ukr.foldandflyhigh.com",
+   "server_port": 443,
+   "password": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+   "tls": {
+    "enabled": true,
+    "server_name": "ukr.foldandflyhigh.com",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "chrome"
+    }
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "ukr.foldandflyhigh.com"
+    },
+    "early_data_header_name": "Sec-WebSocket-Protocol"
+   }
+  },
+  {
+   "type": "trojan",
+   "tag": "wearestand-Moldova 2",
+   "server": "md.foldandflyhigh.com",
+   "server_port": 443,
+   "password": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+   "tls": {
+    "enabled": true,
+    "server_name": "md.foldandflyhigh.com",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "chrome"
+    }
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "md.foldandflyhigh.com"
+    },
+    "early_data_header_name": "Sec-WebSocket-Protocol"
+   }
+  },
+  {
+   "type": "trojan",
+   "tag": "wearestand-Singapore 2",
+   "server": "sg.foldandflyhigh.com",
+   "server_port": 443,
+   "password": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+   "tls": {
+    "enabled": true,
+    "server_name": "sg.foldandflyhigh.com",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "chrome"
+    }
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "sg.foldandflyhigh.com"
+    },
+    "early_data_header_name": "Sec-WebSocket-Protocol"
+   }
+  },
+  {
+   "type": "trojan",
+   "tag": "wearestand-Belgium 2",
+   "server": "bg.foldandflyhigh.com",
+   "server_port": 443,
+   "password": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+   "tls": {
+    "enabled": true,
+    "server_name": "bg.foldandflyhigh.com",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "chrome"
+    }
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "bg.foldandflyhigh.com"
+    },
+    "early_data_header_name": "Sec-WebSocket-Protocol"
+   }
+  }
+   
+
+  ],
+  "route": {
+    "rules": [
+      {
+        "action": "sniff",
+        "inbound": "tun-in"
+      },
+      {
+        "action": "hijack-dns",
+        "protocol": "dns"
+      },
+      {
+        "action": "reject",
+        "protocol": "quic"
+      },
+      {
+        "action": "reject",
+        "rule_set": [
+          "Category-Ads"
+        ]
+      }
+    ],
+    "rule_set": [
+      {
+        "tag": "Category-Ads",
+        "type": "remote",
+        "url": "https://github.com/wearestand14-01/sing-box-Rule/raw/refs/heads/main/Category-Ads.srs",
+        "format": "binary"
+      },
+      {
+        "tag": "GeoIP-Private",
+        "type": "remote",
+        "url": "https://github.com/wearestand14-01/sing-box-Rule/raw/refs/heads/main/GeoIP-Private.srs",
+        "format": "binary"
+      },
+      {
+        "tag": "GeoSite-Private",
+        "type": "remote",
+        "url": "https://github.com/wearestand14-01/sing-box-Rule/raw/refs/heads/main/GeoSite-Private.srs",
+        "format": "binary"
+      },
+      {
+        "tag": "GeoIP-IR",
+        "type": "remote",
+        "url": "https://github.com/wearestand14-01/sing-box-Rule/raw/refs/heads/main/GeoIP-IR.srs",
+        "format": "binary"
+      },
+      {
+        "tag": "GeoSite-IR",
+        "type": "remote",
+        "url": "https://github.com/wearestand14-01/sing-box-Rule/raw/refs/heads/main/GeoSite-IR.srs",
+        "format": "binary"
+      }
+    ],
+    "auto_detect_interface": true,
+    "final": "نیکا شاکرمی مهسا امینی",
+    "default_domain_resolver": {
+      "server": "Local-DNS"
+    }
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "Local-DNS",
+        "type": "https",
+        "domain_resolver": "Local-DNS-Resolver",
+        "server_port": 443,
+        "server": "94.140.14.140",
+        "path": "/dns-query"
+      },
+      {
+        "tag": "Local-DNS-Resolver",
+        "type": "udp",
+        "server_port": 53,
+        "server": "94.140.14.140"
+      },
+      {
+        "tag": "Remote-DNS",
+        "type": "tls",
+        "detour": "منصوره سگوند مهسا موگویی",
+        "domain_resolver": "Remote-DNS-Resolver",
+        "server_port": 853,
+        "server": "8.8.8.8"
+      },
+      {
+        "tag": "Remote-DNS-Resolver",
+        "type": "udp",
+        "detour": "منصوره سگوند مهسا موگویی",
+        "server_port": 53,
+        "server": "8.8.8.8"
+      }
+    ],
+    "rules": [
+      {
+        "action": "route",
+        "clash_mode": "direct",
+        "server": "Local-DNS"
+      },
+      {
+        "action": "route",
+        "clash_mode": "global",
+        "server": "Remote-DNS"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "GeoSite-IR"
+        ],
+        "server": "Local-DNS"
+      }
+    ],
+    "disable_cache": false,
+    "disable_expire": false,
+    "independent_cache": false,
+    "final": "Remote-DNS"
+  }
+
+}
