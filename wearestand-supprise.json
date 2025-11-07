@@ -1,0 +1,494 @@
+{
+  "log": {
+    "disabled": false,
+    "level": "fatal",
+    "output": "",
+    "timestamp": false
+  },
+  "experimental": {
+    "clash_api": {
+      "external_controller": "127.0.0.1:20123",
+      "external_ui": "",
+      "external_ui_download_url": "",
+      "secret": "87436b2acaa06f04b50f0081c05ce081987f3b7ad468bf53d197a188b38b37d7",
+      "default_mode": "rule",
+      "access_control_allow_origin": [
+        "*"
+      ],
+      "access_control_allow_private_network": false
+    },
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db",
+      "cache_id": "",
+      "store_fakeip": true,
+      "store_rdrc": true,
+      "rdrc_timeout": "7d"
+    }
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 20122,
+      "tcp_fast_open": false,
+      "tcp_multi_path": false,
+      "udp_fragment": false
+    },
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "interface_name": "",
+      "address": [
+        "172.18.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "mtu": 9000,
+      "auto_route": true,
+      "strict_route": true,
+      "endpoint_independent_nat": false,
+      "stack": "mixed"
+    }
+  ],
+      
+   "outbounds": [
+{
+        "type": "selector",
+        "tag": "مرگ بر خامنه ای ضحاک",
+        "outbounds": [
+          "خدمات دهنده جنسی حمام منصوری",
+          "خدمات دهنده جنسی حمام منصوری"
+        
+        
+        ],
+        "default": "خدمات دهنده جنسی حمام منصوری",
+        "interrupt_exist_connections": true
+      },
+
+   {
+        "type": "selector",
+        "tag": "تف به شرف نداشتت علی خامنه ای خدمات دهنده جنسی حمام منصوری",
+        "outbounds": [
+          "خدمات دهنده جنسی حمام منصوری",
+          "خدمات دهنده جنسی حمام منصوری"
+        
+        
+        ],
+        "default": "خدمات دهنده جنسی حمام منصوری",
+        "interrupt_exist_connections": true
+      },
+    {
+      "type": "selector",
+      "tag": "موشعلی رهبر موش ها",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+     
+        "خدمات دهنده جنسی حمام منصوری",
+   "direct",
+   "🇧🇭BAHRAIN",
+   "🇫🇮FINLAND",
+   "🇫🇷FRANCE",
+   "🇫🇷FRANCE2",
+   "🇩🇰DENMARK",
+   "🇦🇺AUSTRALIA",
+   "🇧🇪BELGIUM",
+   "🇷🇺RUSSIA",
+   "🇺🇸UNITED STATES"
+   
+   
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "خدمات دهنده جنسی حمام منصوری",
+      "url": "http://cp.cloudflare.com",
+      "interval": "3m",
+      "tolerance": 150,
+      "interrupt_exist_connections": true,
+      "outbounds": [
+
+   "🇧🇭BAHRAIN",
+   "🇫🇮FINLAND",
+   "🇫🇷FRANCE",
+   "🇫🇷FRANCE2",
+   "🇩🇰DENMARK",
+   "🇦🇺AUSTRALIA",
+   "🇧🇪BELGIUM",
+   "🇷🇺RUSSIA",
+   "🇺🇸UNITED STATES"
+   
+   
+      ]
+    },
+    
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+ {
+      "type": "trojan",
+      "tag": "🇧🇭BAHRAIN",
+      "server": "38.54.2.77",
+      "server_port": 60606,
+      "password": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "tls":       {
+        "enabled": true,
+        "server_name": "ieee.org",
+        "insecure": true,
+        "utls":         {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+
+{
+      "tag": "🇫🇮FINLAND",
+      "type": "vmess",
+      "server": "185.227.68.110",
+      "server_port": 9443,
+      "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "ieee.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "ieee.org"
+        }
+      },
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      }
+},
+{
+      "tag": "🇫🇷FRANCE",
+      "type": "vmess",
+      "server": "93.177.75.22",
+      "server_port": 9443,
+      "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "ieee.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "ieee.org"
+        }
+      },
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      }
+},
+{
+      "type": "trojan",
+      "tag": "🇫🇷FRANCE2",
+      "server": "93.177.75.86",
+      "server_port": 60606,
+      "password": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "tls":       {
+        "enabled": true,
+        "server_name": "ieee.org",
+        "insecure": true,
+        "utls":         {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+{
+      "tag": "🇩🇰DENMARK",
+      "type": "vmess",
+      "server": "2.58.46.189",
+      "server_port": 9443,
+      "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "ieee.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "ieee.org"
+        }
+      },
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      }
+},
+{
+      "tag": "🇦🇺AUSTRALIA",
+      "type": "vmess",
+      "server": "217.138.205.194",
+      "server_port": 9443,
+      "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "ieee.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "ieee.org"
+        }
+      },
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      }
+},
+{
+      "tag": "🇧🇪BELGIUM",
+      "type": "vmess",
+      "server": "91.90.123.42",
+      "server_port": 9443,
+      "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "ieee.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "ieee.org"
+        }
+      },
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      }
+},
+    {
+      "tag": "🇷🇺RUSSIA",
+      "type": "vless",
+      "server": "194.87.69.111",
+      "server_port": 4333,
+      "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "tls":       {
+        "enabled": true,
+        "server_name": "ieee.org",
+        "insecure": true,
+        "utls":         {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+{
+      "tag": "🇺🇸UNITED STATES",
+      "type": "vmess",
+      "server": "146.70.154.237",
+      "server_port": 9443,
+      "uuid": "BBB23A5D-44F1-2AF1-83A0-B65222D16BCA",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "ieee.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "ieee.org"
+        }
+      },
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      }
+}
+  ],
+  "route": {
+    "rules": [
+      {
+        "action": "sniff",
+        "inbound": "tun-in"
+      },
+      {
+        "action": "hijack-dns",
+        "protocol": "dns"
+      },
+      {
+        "action": "reject",
+        "protocol": "quic"
+      },
+      {
+        "action": "reject",
+        "rule_set": [
+          "Category-Ads"
+        ]
+      }
+    ],
+    "rule_set": [
+      {
+        "tag": "Category-Ads",
+        "type": "remote",
+        "url": "https://github.com/wearestand14-01/sing-box-Rule/raw/refs/heads/main/Category-Ads.srs",
+        "format": "binary"
+      },
+      {
+        "tag": "GeoIP-Private",
+        "type": "remote",
+        "url": "https://github.com/wearestand14-01/sing-box-Rule/raw/refs/heads/main/GeoIP-Private.srs",
+        "format": "binary"
+      },
+      {
+        "tag": "GeoSite-Private",
+        "type": "remote",
+        "url": "https://github.com/wearestand14-01/sing-box-Rule/raw/refs/heads/main/GeoSite-Private.srs",
+        "format": "binary"
+      },
+      {
+        "tag": "GeoIP-IR",
+        "type": "remote",
+        "url": "https://github.com/wearestand14-01/sing-box-Rule/raw/refs/heads/main/GeoIP-IR.srs",
+        "format": "binary"
+      },
+      {
+        "tag": "GeoSite-IR",
+        "type": "remote",
+        "url": "https://github.com/wearestand14-01/sing-box-Rule/raw/refs/heads/main/GeoSite-IR.srs",
+        "format": "binary"
+      }
+    ],
+    "auto_detect_interface": true,
+    "final": "خدمات دهنده جنسی حمام منصوری",
+    "default_domain_resolver": {
+      "server": "Local-DNS"
+    }
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "Local-DNS",
+        "type": "https",
+        "domain_resolver": "Local-DNS-Resolver",
+        "server_port": 443,
+        "server": "94.140.14.140",
+        "path": "/dns-query"
+      },
+      {
+        "tag": "Local-DNS-Resolver",
+        "type": "udp",
+        "server_port": 53,
+        "server": "94.140.14.140"
+      },
+      {
+        "tag": "Remote-DNS",
+        "type": "tls",
+        "detour": "موشعلی رهبر موش ها",
+        "domain_resolver": "Remote-DNS-Resolver",
+        "server_port": 853,
+        "server": "8.8.8.8"
+      },
+      {
+        "tag": "Remote-DNS-Resolver",
+        "type": "udp",
+        "detour": "موشعلی رهبر موش ها",
+        "server_port": 53,
+        "server": "8.8.8.8"
+      }
+    ],
+    "rules": [
+      {
+        "action": "route",
+        "clash_mode": "direct",
+        "server": "Local-DNS"
+      },
+      {
+        "action": "route",
+        "clash_mode": "global",
+        "server": "Remote-DNS"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "GeoSite-IR"
+        ],
+        "server": "Local-DNS"
+      }
+    ],
+    "disable_cache": false,
+    "disable_expire": false,
+    "independent_cache": false,
+    "final": "Remote-DNS"
+  }
+
+}
