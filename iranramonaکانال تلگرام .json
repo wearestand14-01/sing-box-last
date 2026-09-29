@@ -52,7 +52,7 @@
       "type": "openvpn-client",
       "tag": "wearestand",
       "mode": "tls",
-      "server": "185.253.160.148",
+      "server": "212.112.19.83",
       "server_port": 8443,
       "network": "udp",
       "username": "rused3V8KT",
