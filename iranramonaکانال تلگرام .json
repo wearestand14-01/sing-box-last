@@ -50,7 +50,7 @@
 "endpoints": [
       {
       "type": "openvpn-client",
-      "tag": "openvpn",
+      "tag": "wearestand",
       "mode": "tls",
       "server": "84.17.52.40",
       "server_port": 8443,
@@ -102,14 +102,14 @@
       "tag": "select",
       "interrupt_exist_connections": true,
       "outbounds": [
-        "openvpn"
+        "wearestand"
 
       ]
     }
   ],
   "route": {
     "auto_detect_interface": true,
-    "final": "openvpn",
+    "final": "wearestand",
     "default_domain_resolver": "dns-direct",
     "rules": [
       {
@@ -165,7 +165,7 @@
         "network": [
           "udp"
         ],
-        "outbound": "openvpn",
+        "outbound": "wearestand",
         "port": [
           53
         ]
@@ -188,7 +188,7 @@
           "tcp",
           "udp"
         ],
-        "outbound": "openvpn",
+        "outbound": "wearestand",
         "port": [
           443,
           853
@@ -237,7 +237,7 @@
       "type": "https",
       "server": "8.8.8.8",
       "server_port": 443,
-      "detour": "openvpn"
+      "detour": "wearestand"
     },
     {
       "tag": "dns-fake",
